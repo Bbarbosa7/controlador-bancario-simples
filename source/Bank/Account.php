@@ -11,7 +11,7 @@ abstract class Account
     protected $account;
     protected $client;
     protected $balance;
-    
+
     /**
      * __construct
      *
@@ -22,12 +22,11 @@ abstract class Account
      */
     protected function __construct($branch, $account, User $client, $balance)
     {
-        
+
         $this->branch = $branch;
         $this->account = $account;
         $this->client = $client;
         $this->balance = $balance;
-
     }
 
     public function extract()
@@ -44,5 +43,4 @@ abstract class Account
     abstract public function deposit($value);
 
     abstract public function withdrawal($value);
-
 }

@@ -7,7 +7,6 @@ use Source\App\User;
 
 class AccountSaving extends Account
 {
-
     private $interest;
 
     public function __construct($branch, $account, User $client, $balance)
@@ -31,5 +30,4 @@ class AccountSaving extends Account
             Trigger::show("Saldo insuficiente, você tem {$this->toBrl($this->balance)}!", Trigger::WARNING);
         }
     }
-
 }

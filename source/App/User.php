@@ -4,10 +4,9 @@ namespace Source\App;
 
 class User
 {
-    
     private $firstName;
     private $lastName;
-    
+
     /**
      * __construct
      *
@@ -20,20 +19,19 @@ class User
         $this->lastName = $lastName;
     }
 
+    /**
+     * @return mixed 
+     */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
 
-        /**
-         * @return mixed 
-         */ 
-        public function getFirstName()
-        {
-            return $this->firstName;
-        }
-
-        /**
-         * @return mixed
-         */ 
-        public function getLastName()
-        {
-            return $this->lastName;
-        }
+    /**
+     * @return mixed
+     */
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
 }

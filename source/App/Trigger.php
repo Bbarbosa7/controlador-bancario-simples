@@ -34,6 +34,5 @@ class Trigger
         self::$message = $message;
         self::$errorType = (!empty($errorType) || in_array($errorType, $errorTypes) ? " {$errorType}" : "");
         self::$error = "<p class='" . self::TRIGGER . self::$errorType . "'>" . self::$message . "</p>";
-
     }
 }

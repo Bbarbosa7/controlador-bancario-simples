@@ -17,9 +17,8 @@ $client = new User("Brayann", "Barbosa");
 
 var_dump(
     $client
-//    $account
+    //    $account
 );
-
 
 $saving = new AccountSaving(
     "2565",
@@ -36,7 +35,6 @@ $saving->withdrawal("550");
 $saving->withdrawal("500");
 
 $saving->extract();
-
 
 $current = new AccountCurrent(
     "2255",
